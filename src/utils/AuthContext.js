@@ -90,12 +90,12 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  let logoutUser = () => {
+  const logoutUser = useCallback(() => {
     setAuthTokens(null);
     setUser(null);
     localStorage.removeItem("authTokens");
     history("/login");
-  };
+  }, [])
 
   
 
