@@ -1,0 +1,50 @@
+.slider-web {
+  width: 95%;
+  margin: auto;  
+}
+
+.card-div{
+  width: 100%;
+}
+.card {
+  margin: 0 25px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.card-img{
+  max-width: 550px;
+  max-height: 220px;
+}
+.slider-btn:hover {
+  transition: all 0.5s ease;
+  background-color: rgb(27, 26, 26);
+}
+
+.slider-btn-div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.slider-btn {
+  height: 50px;
+  width: 5%;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+.slider-btn:disabled {
+  opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+  cursor: not-allowed; /* Change cursor to indicate unclickable */
+}
+
+@media screen and (max-width: 880px){
+  .card{
+    /* width: 80%; */
+    margin: 10px;
+  }
+}
