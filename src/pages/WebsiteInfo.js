@@ -21,7 +21,7 @@ const WebsiteInfo = () => {
 
   useEffect(() => {
     getWebsiteInfo();
-  }, []);
+  }, [id, getWebsiteInfo]);
   return (
     <div>
       {loading ? <img src={loader} alt="loading..." style={{

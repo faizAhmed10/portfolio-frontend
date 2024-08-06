@@ -134,7 +134,7 @@ export const AuthProvider = ({ children }) => {
       }
       return () => clearInterval(interval);
     }, fourMinutes);
-  }, [authTokens, loading]);
+  }, [authTokens, loading, updateToken]);
 
   let contextData = {
     user: user,

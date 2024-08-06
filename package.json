@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "proxy":"https://portfolio-backend-7xz3.onrender.com/",
+  "proxy": "https://portfolio-backend-7xz3.onrender.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,8 +21,9 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.4",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "^3.0.1",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.93.0"
   },
   "scripts": {
     "start": "react-scripts start",
