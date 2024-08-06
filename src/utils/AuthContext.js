@@ -97,33 +97,34 @@ export const AuthProvider = ({ children }) => {
     history("/login");
   };
 
-  let updateToken = async () => {
-    let response = await fetch("/api/token/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        "refresh": authTokens?.refresh,
-      }),
-    });
-    let data = await response.json();
-
-    if (response.status === 200) {
-      setAuthTokens(data);
-      setUser(jwtDecode(data.access));
-      localStorage.setItem("authTokens", JSON.stringify(data));
-    }
-    else{
-      logoutUser()
-    }
-
-    if (loading) {
-      setLoading(false);
-    }
-  };
+  
 
   useEffect(() => {
+    let updateToken = async () => {
+      let response = await fetch("/api/token/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          "refresh": authTokens?.refresh,
+        }),
+      });
+      let data = await response.json();
+  
+      if (response.status === 200) {
+        setAuthTokens(data);
+        setUser(jwtDecode(data.access));
+        localStorage.setItem("authTokens", JSON.stringify(data));
+      }
+      else{
+        logoutUser()
+      }
+  
+      if (loading) {
+        setLoading(false);
+      }
+    };
     if (loading) {
       updateToken();
     }
@@ -134,7 +135,7 @@ export const AuthProvider = ({ children }) => {
       }
       return () => clearInterval(interval);
     }, fourMinutes);
-  }, [authTokens, loading, updateToken]);
+  }, [authTokens, loading]);
 
   let contextData = {
     user: user,

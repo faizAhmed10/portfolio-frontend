@@ -8,20 +8,21 @@ const WebsiteInfo = () => {
 
   const [webInfo, setWebInfo] = useState([]);
   let [loading, setLoading] = useState(true)
-  const getWebsiteInfo = async () => {
-    try {
-      let response = await fetch(`/api/website/${id}`);
-      let data = await response.json();
-      setWebInfo(data);
-      setLoading(false)
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  
 
   useEffect(() => {
+    const getWebsiteInfo = async () => {
+      try {
+        let response = await fetch(`/api/website/${id}`);
+        let data = await response.json();
+        setWebInfo(data);
+        setLoading(false)
+      } catch (error) {
+        console.log(error);
+      }
+    };
     getWebsiteInfo();
-  }, [id, getWebsiteInfo]);
+  }, [id]);
   return (
     <div>
       {loading ? <img src={loader} alt="loading..." style={{
@@ -39,7 +40,7 @@ const WebsiteInfo = () => {
         <div className="image-container">
           <img
             src={webInfo.image}
-            alt="Beautiful Image"
+            alt="website display"
             className="rounded-image"
           />
           <div className="overlay"></div>
