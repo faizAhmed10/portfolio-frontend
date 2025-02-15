@@ -32,7 +32,10 @@ const Work = () => {
       </div>
       <div>
         {loading && <img className="loader" src={loader} alt=""/>}
-        {!loading ? <Carousel website={site} /> : null}
+        {!loading && site.length > 0 ? <Carousel website={site} /> :<p style={{
+          textAlign: "center",
+          marginBlock: "2rem"
+        }}>No Projects uploaded yet</p>}
       </div>
     </div>
   );
