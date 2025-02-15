@@ -1,0 +1,89 @@
+/* ABOUT */
+
+#about{
+    width: 80%;
+    margin-inline: auto;
+    align-items: center;
+  }
+  
+
+.intro-txt p{
+  font-size: 1.15rem;
+}
+
+.skills-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill{
+  display: flex;
+}
+
+.skill p{
+  text-align: center;
+  flex-grow: 1;
+}
+.outer{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  background-color: rgb(29, 29, 29);
+  height: 20px;
+  border-radius: 100vw;
+}
+
+.inner{
+  border-radius: 100vw;
+  background-color: rgb(6, 6, 73);
+  height: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-react{
+  width: 60%;
+}
+
+.inner-django{
+  width: 40%;
+}
+
+.inner-javascript{
+  width: 60%;
+}
+
+.inner-python{
+  width: 60%;
+}
+
+.inner-html{
+  width: 80%;
+}
+
+.inner-css{
+  width: 70%;
+}
+
+.inner-c{
+  width: 55%;
+}
+
+.inner-cpp{
+  width: 55%;
+}
+
+.inner-java{
+  width: 40%;
+}
+
+@media screen and (max-width: 880px) {
+  #about{
+    width: 90%;
+  }
+  .skills-box{
+    display: block;
+  }
+}

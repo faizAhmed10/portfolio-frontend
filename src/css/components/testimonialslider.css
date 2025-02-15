@@ -1,0 +1,6 @@
+.slider {
+    width: 95%;
+    height: 60vh;
+    margin: auto;  
+    overflow-y: scroll;
+  }
