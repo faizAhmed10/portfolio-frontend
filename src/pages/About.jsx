@@ -12,15 +12,15 @@ const About = () => {
       <div id="about">
         <div className="intro-txt">
         <p>
-        Welcome to my portfolio website! I am a 20-year-old aspiring web developer with expertise in ReactJS and Django, always eager to learn new technologies. Currently, I am pursuing a Bachelor's Degree in Computer Applications (2023-2026) in Bangalore, Karnataka, India.
+        Welcome to my portfolio! I’m a 20-year-old web developer passionate about building functional and visually appealing web applications. Currently pursuing a BCA (2023-2026) in Bangalore, I have hands-on experience with ReactJS and Django and am always eager to learn and explore new technologies.
         </p>
 
         <p>
-        I've always been fascinated by web development. It offers the perfect blend of creativity and logic, enabling me to create beautiful and functional websites and web applications.
+        I find web development to be the perfect balance of creativity and logic, allowing me to craft digital solutions to real-world problems. My tech stack—ReactJS and Django—is widely used by leading companies like Instagram, Pinterest, and Spotify for developing scalable, high-performance applications.
         </p>
 
         <p>
-        ReactJS and Django are some of the most powerful and popular technologies in the field. They can be used to develop scalable and dynamic websites and web apps. Many leading companies, such as Instagram, Pinterest, Spotify, Dropbox, and YouTube, use this tech stack. Feel free to explore my work and connect with me!
+        Feel free to explore my work, and let's connect! 🚀
         </p>
         </div>
 
